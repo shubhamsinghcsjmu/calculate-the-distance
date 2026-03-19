@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Distance Calculator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Distance Calculator</h1>
+        
+        <div class="calculator-section">
+            <h2>Calculate Distance Between Two Points</h2>
+            
+            <div class="input-group">
+                <label for="x1">Point 1 - X coordinate:</label>
+                <input type="number" id="x1" placeholder="Enter X1" value="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="y1">Point 1 - Y coordinate:</label>
+                <input type="number" id="y1" placeholder="Enter Y1" value="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="x2">Point 2 - X coordinate:</label>
+                <input type="number" id="x2" placeholder="Enter X2" value="3">
+            </div>
+            
+            <div class="input-group">
+                <label for="y2">Point 2 - Y coordinate:</label>
+                <input type="number" id="y2" placeholder="Enter Y2" value="4">
+            </div>
+            
+            <button onclick="calculateDistance()">Calculate Distance</button>
+            
+            <div id="result" class="result"></div>
+        </div>
+
+        <div class="calculator-section">
+            <h2>Calculate Distance Between Three Dimensions</h2>
+            
+            <div class="input-group">
+                <label for="x1_3d">Point 1 - X coordinate:</label>
+                <input type="number" id="x1_3d" placeholder="Enter X1" value="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="y1_3d">Point 1 - Y coordinate:</label>
+                <input type="number" id="y1_3d" placeholder="Enter Y1" value="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="z1_3d">Point 1 - Z coordinate:</label>
+                <input type="number" id="z1_3d" placeholder="Enter Z1" value="0">
+            </div>
+            
+            <div class="input-group">
+                <label for="x2_3d">Point 2 - X coordinate:</label>
+                <input type="number" id="x2_3d" placeholder="Enter X2" value="1">
+            </div>
+            
+            <div class="input-group">
+                <label for="y2_3d">Point 2 - Y coordinate:</label>
+                <input type="number" id="y2_3d" placeholder="Enter Y2" value="2">
+            </div>
+            
+            <div class="input-group">
+                <label for="z2_3d">Point 2 - Z coordinate:</label>
+                <input type="number" id="z2_3d" placeholder="Enter Z2" value="3">
+            </div>
+            
+            <button onclick="calculateDistance3D()">Calculate 3D Distance</button>
+            
+            <div id="result3d" class="result"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
